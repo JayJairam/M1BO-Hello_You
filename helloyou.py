@@ -150,6 +150,9 @@ def caves():
         else:
             print("kiez uit val monster aan of daimonds")
 
+def dungoun2():
+    print("test")
+
 
 def dungoun():
     print("Je komt bij de dungoun aan waar vele barbaren zijn gesneuveld. Hier moest je een schatkist vinden vol met goud of je moet de titanen draak verslaan.")
