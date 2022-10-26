@@ -1,8 +1,9 @@
 "# M1BO-Hello_You" 
 import time 
-
+from playsound import playsound
 
 def dead():
+    
     print("""
                             ____________
                       .~      ,   . ~.
