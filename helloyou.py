@@ -60,6 +60,10 @@ def award1():
 """)
 
 
+
+
+
+
 def award2():
     print("Je bent sterkste barbaar ooit geworden")
     time.sleep(2.7)
@@ -109,6 +113,7 @@ def award2():
 
 
 
+
 def intro():
     print("Jij bent een barbaar met de meest sterksten krachten maar die krachten heb je niet zomaar gekregen, je hebt ze gekregen van een tovenaar genaamd Skeletor.")
     time.sleep(3.0)
@@ -118,6 +123,8 @@ def intro():
     time.sleep(3.0)
     print("De tovenaar geeft je drie keuzen om drie verschillenden questen te doen. Je kan kiezen tussen de CAVES, de DUNGOUN of de FOREST.")
     print("Kiez uit caves, dungoun, forest")
+
+
 
 def caves2():
     print("e mined de daimonds en word de rijkste barbaar ooit of :je pakt het hoofd van het monster en word de sterkste barbaar ooit. ")
@@ -129,7 +136,9 @@ def caves2():
             award2()
         else:
             print("kiez uit daimonds of hoofd meenemen")
-        
+
+
+
 def caves():
     print("Je komt bij de gevaarlijke Caves aan genaamd dodelijke grotten.")
     time.sleep(2.7)
@@ -150,8 +159,19 @@ def caves():
         else:
             print("kiez uit val monster aan of daimonds")
 
+
+
 def dungoun2():
-    print("test")
+    print("Nu kan je kiezen om de kist te pakken of om de kop te pakken")
+    for i in range(5):
+        choice = input()
+        if choice == 'pak kist':
+            award1()
+        elif choice == 'pak kop':
+            award2()
+        else:
+            print("kiez uit pak kist of pak kop.")
+
 
 
 def dungoun():
@@ -174,18 +194,11 @@ def dungoun():
 
 
 
-
-
-
-
-
 def forest():
     print("test")
 
 
 intro()
-
-
 for i in range(5):
     choice = input() 
     if choice == 'caves':
