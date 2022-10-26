@@ -151,17 +151,30 @@ def caves():
             print("kiez uit val monster aan of daimonds")
 
 
-
-
-
-
-
-
-
-
-
 def dungoun():
-    print("test")
+    print("Je komt bij de dungoun aan waar vele barbaren zijn gesneuveld. Hier moest je een schatkist vinden vol met goud of je moet de titanen draak verslaan.")
+    time.sleep(2.8)
+    print("Je ziet de kist vol met goud liggen en een grot verder op zie de draak slapen.")
+    time.sleep(3.0)
+    print("wat ga je doen? Pak je de kist of versla je de draak")
+
+    for i in range(5):
+        choice = input()
+        if choice == 'pak kist':
+            print("Je pakt de schatkist en opeens laat je een gouden munt vallen hiermee heb je de draak wakker gemaakt en eet je op")
+            dead()
+        elif choice == 'versla draak':
+            print("Je hebt de draak met moeite verslagen")
+            dungoun2()
+        else:
+            print("kiez uit pak kist of versla draak")
+
+
+
+
+
+
+
 
 def forest():
     print("test")
