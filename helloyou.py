@@ -1,7 +1,9 @@
 "# M1BO-Hello_You" 
 import time
+import winsound
 
 def dead():
+    winsound.PlaySound("deathscream.wav", winsound.SND_FILENAME)
     print("""
                             ____________
                       .~      ,   . ~.
@@ -26,7 +28,6 @@ X      X     @%%;;@   |. ` ; ; ; ;  ,|   @%%;;@     X      X
                          @%%;;@..@@
                           @@@  @@@
 """)
-    time.sleep(3.0)
     print("you died!!!")
 
 
@@ -38,6 +39,7 @@ def award1():
     print("Je hebt het wezen verslagen")
     time.sleep(2.7)
     print("Je bent de meest rijkste barbaar ooit.")
+    winsound.PlaySound("coin.wav", winsound.SND_FILENAME)
     print(""" 
                    ██████████                                                
                                 ▓▓░░▓▓░░▒▒░░  ░░▓▓                                              
@@ -143,6 +145,7 @@ def award2():
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠙⠛⠛⠛⠻⠿⠿⠿⠿⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 """)
     print("END")
+    winsound.PlaySound("strongend.wav", winsound.SND_FILENAME)
 
 
 
@@ -242,6 +245,7 @@ def award3():
 ░░          ░░      ░░        ░░                        ░░              ░░        ░░    
 """)
     print("END")
+    winsound.PlaySound("thor.wav", winsound.SND_FILENAME)
 
 
 
@@ -331,7 +335,7 @@ def caves2():
     print("e mined de daimonds en word de rijkste barbaar ooit of :je pakt het hoofd van het monster en word de sterkste barbaar ooit. ")
     for i in range(5):
         choice = input()
-        if choice == 'daimonds':
+        if choice == 'diamonds':
             award1()
         elif choice == 'hoofd meenemen':
             award2()
@@ -345,6 +349,7 @@ def caves():
     time.sleep(2.7)
     print("Daar moest je diamonds halen of het hoofd van de monster voor de tovenaar.")
     time.sleep(2.7)
+    winsound.PlaySound("monster.wav", winsound.SND_FILENAME)
     print(". Je ziet de daimonds maar daarnaast zie je een grote monster genaamd roadhog.")
     print("wat ga je doen, ga je voor de daimonds of val je de monster aan")
     
@@ -363,7 +368,7 @@ def caves():
 
 
 def dungoun2():
-    print("Nu kan je kiezen om de kist te pakken of om de kop te pakken")
+    print("Nu kan je kiezen om de kist te pakken of om de kop te pakken van de draak")
     for i in range(5):
         choice = input()
         if choice == 'pak kist':
@@ -386,6 +391,7 @@ def dungoun():
         choice = input()
         if choice == 'pak kist':
             print("Je pakt de schatkist en opeens laat je een gouden munt vallen hiermee heb je de draak wakker gemaakt en eet je op")
+            winsound.PlaySound("dragonscream.wav", winsound.SND_FILENAME)
             dead()
         elif choice == 'versla draak':
             print("Je hebt de draak met moeite verslagen")
@@ -435,12 +441,15 @@ intro()
 for i in range(5):
     choice = input() 
     if choice == 'caves':
+        winsound.PlaySound("introsound.wav", winsound.SND_FILENAME)
         barbaar()
         caves()
     elif choice == 'dungoun':
+        winsound.PlaySound("introsound.wav", winsound.SND_FILENAME)
         barbaar()
         dungoun()
     elif choice == 'forest':
+        winsound.PlaySound("introsound.wav", winsound.SND_FILENAME)
         barbaar()
         forest()
     else:
