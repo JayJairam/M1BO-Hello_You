@@ -114,6 +114,74 @@ def award2():
 
 
 
+def barbaar():
+    print("""
+                            .-'`-.
+                               /  | | \
+                              /   | |  \
+                             |  __|_|___|
+                             |' |||
+                             |(   _L   ||
+                             \|`-'__`-'|'
+                              |  `--'  |
+                             _|        |-.
+                         .-'| |  \     /  `-.
+                        /   | |\     .'      `-.
+                       /    | | `''''           \
+                      J     | |             _____|
+                      |  |  J J         .-'   ___ `-.
+                      |  \   L L      .'  .-'  |  `-.`.
+                      | \|   | |     /  .'|    |    |\ \
+                      |  |   J J   .' .'  |    |    | \ \
+                      |  |    L L J  /    |    |    |  \ L
+                     /   |     \ \F J|    |    |    |   LJ
+                     |   |      \J F | () | () | () | ()| L
+                    J  \ |       FJ  |    |  / _`-. |   J |
+                    |    |      J |  |    | //    \ |   J |
+                   J     |\     | |  |    ||:(     ||   J |
+                   |     | `----| |  |    ||::`._.:||   | F
+                   |     /\_    | |  |    ||:::::::F|   | F
+                   |    |  /`---| |  |    | \:::::/ |   FJ
+                   F    |  / |  J |  |    |  `-:-'  |  J F
+                  J_.--/  /  |  J J  | () | () | () |()FJ
+                   |  |    /     L L |    |    |    | / F
+                   |  |     |    \ \ |    |    |    |/ /
+                 |`-. |    |     |\ \|    |    |    / /
+                 J'\ \|    |     | `.`.   |    |  .'.'
+                / .'> |    |     |  `-.`-.|____.-'.'
+              .' /::'_|    |/    |    `-.______.-'
+             / .::/   \    |     |           |  |
+           .' /::'     |--._     |           |--|
+          / .::/       |    `-.__|     ____.-|//|
+        .' /::'        |        F `--'      ||< |
+       / .::/          |       J   |        FL\\|
+     .' /::'           )       |   |        F| >|
+    / .::/            (        \   |        F|//|
+  .' /::'              \       /   |        F|--|
+ / .::/                 |` `' '(   (      ' J|  |
+| /::'                  |  | ` \   \  `    / J  |
+|_:/                    |  | | |    |`-  ''F J  J
+                        |    ' F    |   "" |  `-'
+                        |     J     |      |
+                        |     /     |      |
+                        |   .'      |      F
+                       /---'(       J     J
+                     .'     \        L    |
+                  .-'        )       L    F
+                .'       .---'       \__.-'
+ VK            (       .'             L   |
+                `-----'               |   \
+                                      J    \
+                                       L    L
+                                       |    F
+                                       `-.-'
+""")
+                            
+
+
+
+
+
 def intro():
     print("Jij bent een barbaar met de meest sterksten krachten maar die krachten heb je niet zomaar gekregen, je hebt ze gekregen van een tovenaar genaamd Skeletor.")
     time.sleep(3.0)
@@ -202,13 +270,16 @@ intro()
 for i in range(5):
     choice = input() 
     if choice == 'caves':
+        barbaar()
         caves()
         break
     elif choice == 'dungoun':
+        barbaar()
         dungoun()
         break
     elif choice == 'forest':
+        barbaar()
         forest()
         break
     else:
-        print("kiez uit dungoun, caves of forest")
+        print("kiez uit dungoun, caves of forest") 
