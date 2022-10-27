@@ -345,12 +345,12 @@ def caves2():
 
 
 def caves():
-    print("Je komt bij de gevaarlijke Caves aan genaamd dodelijke grotten.")
+    print("Je komt bij de gevaarlijke Caves aan, genaamd dodelijke grotten.")
     time.sleep(2.7)
     print("Daar moest je diamonds halen of het hoofd van de monster voor de tovenaar.")
     time.sleep(2.7)
     winsound.PlaySound("monster.wav", winsound.SND_FILENAME)
-    print(". Je ziet de daimonds maar daarnaast zie je een grote monster genaamd roadhog.")
+    print("Je ziet de daimonds maar daarnaast zie je een grote monster genaamd roadhog.")
     print("wat ga je doen, ga je voor de daimonds of val je de monster aan")
     
     for i in range(5):
