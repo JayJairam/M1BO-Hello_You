@@ -398,6 +398,9 @@ def dungoun():
             dungoun2()
         else:
             print("kiez uit pak kist of versla draak")
+
+
+
 def forest2():
     print("Je gaat verder in de graveyard en ziet het goud wat je zocht")
     time.sleep(3.0)
@@ -432,8 +435,6 @@ def forest():
             forest2()
         else:
             print("kiez uit versla skelleton of enter graveyard")
-
-
 
 
 
