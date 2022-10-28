@@ -101,7 +101,6 @@ def award1():
 
 
 
-
 def award2():
     print("Je bent sterkste barbaar ooit geworden")
     time.sleep(2.7)
@@ -148,6 +147,9 @@ def award2():
 """)
     print("END")
     winsound.PlaySound("strongend.wav", winsound.SND_FILENAME)
+
+
+
 
 
 
@@ -253,6 +255,7 @@ def award3():
 
 
 
+
 def barbaar():
     print("""
                             .-'`-.
@@ -315,7 +318,9 @@ def barbaar():
                                        |    F
                                        `-.-'
 """)
-                            
+
+
+
 
 
 
@@ -348,6 +353,7 @@ def computer():
 
 
 
+
 def easteregg():
     print("wow je bent wakker geworden uit je droom.")
     winsound.PlaySound("wekker.wav", winsound.SND_FILENAME)
@@ -366,8 +372,7 @@ def easteregg():
             time.sleep(4.0)
             intro()
         else:
-            print("kiez uit ziekmelden of naar school gaan.")
-        
+            print("kiez uit ziekmelden of naar school gaan.")        
 
 
 
@@ -384,6 +389,7 @@ def intro():
 
 
 
+
 def caves2():
     print("e mined de daimonds en word de rijkste barbaar ooit of :je pakt het hoofd van het monster en word de sterkste barbaar ooit. ")
     for i in range(5):
@@ -394,6 +400,7 @@ def caves2():
             award2()
         else:
             print("kiez uit daimonds of hoofd meenemen")
+
 
 
 
@@ -420,6 +427,7 @@ def caves():
 
 
 
+
 def dungoun2():
     print("Nu kan je kiezen om de kist te pakken of om de kop te pakken van de draak")
     for i in range(5):
@@ -430,6 +438,7 @@ def dungoun2():
             award2()
         else:
             print("kiez uit pak kist of pak kop.")
+
 
 
 
@@ -454,6 +463,7 @@ def dungoun():
 
 
 
+
 def forest2():
     print("Je gaat verder in de graveyard en ziet het goud wat je zocht")
     time.sleep(3.0)
@@ -468,6 +478,7 @@ def forest2():
         else:
             print("kiez uit goud meenemen of artefact meenemen.")
         
+
 
 
 def forest():
@@ -488,6 +499,7 @@ def forest():
             forest2()
         else:
             print("kiez uit versla skelleton of enter graveyard")
+
 
 
 
