@@ -365,14 +365,16 @@ def easteregg():
             print("Je ging naar school en had een saaie dag.")
             time.sleep(3.0)
             print("END")
-        elif choice == 'ziekmelden':
+        elif choice == 'ziek melden':
             print("Je bleeft thuis en starte the game THE BABARAIN op en speelde de spel.")
             winsound.PlaySound("startup.wav", winsound.SND_FILENAME)
             computer()
             time.sleep(4.0)
             intro()
+            break
         else:
-            print("kiez uit ziekmelden of naar school gaan.")        
+            print("kiez uit ziek melden of naar school gaan.")     
+
 
 
 
@@ -391,7 +393,7 @@ def intro():
 
 
 def caves2():
-    print("e mined de daimonds en word de rijkste barbaar ooit of :je pakt het hoofd van het monster en word de sterkste barbaar ooit. ")
+    print("mine de daimonds en word de rijkste barbaar ooit of je pakt het hoofd van het monster en word de sterkste barbaar ooit. ")
     for i in range(5):
         choice = input()
         if choice == 'diamonds':
