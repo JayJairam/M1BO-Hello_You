@@ -29,6 +29,8 @@ X      X     @%%;;@   |. ` ; ; ; ;  ,|   @%%;;@     X      X
                           @@@  @@@
 """)
     print("you died!!!")
+    time.sleep(3.0)
+    print("HINT:wat is het tegenovergestelde van slapen.")
 
 
 
@@ -317,6 +319,57 @@ def barbaar():
 
 
 
+def computer():
+    print("""
+     .__________________________.
+    | .___________________. |==|
+    | |     STARTING GAME ][-==-
+    | |                   | |  |
+    | |                   | |  |
+    | |                   | |  |
+    | |                   | |  |
+    | |                   | |  |
+    | | ]                 | | ,|
+    | !___________________! |(c|
+    !_______________________!__!
+    |    ___ -=      ___ -= | ,|
+    | ---[_]---   ---[_]--- |(c|
+
+    !_______________________!__!
+   /                            \
+  /  [][][][][][][][][][][][][]  \
+ /  [][][][][][][][][][][][][][]  \
+(  [][][][][____________][][][][]  )
+ \ ------------------------------ /
+  \______________________________/
+  """)     
+
+
+
+
+
+def easteregg():
+    print("wow je bent wakker geworden uit je droom.")
+    winsound.PlaySound("wekker.wav", winsound.SND_FILENAME)
+    print("Je moeder roept je om klaar te maken voor school")
+    print("Daarin tegen heb je geen zin om naar school te gaan, jij komt met het idee om je ziek te melden wat ga je doen")
+    for i in range(5):
+        choice = input()
+        if choice == 'naar school gaan':
+            print("Je ging naar school en had een saaie dag.")
+            time.sleep(3.0)
+            print("END")
+        elif choice == 'ziekmelden':
+            print("Je bleeft thuis en starte the game THE BABARAIN op en speelde de spel.")
+            winsound.PlaySound("startup.wav", winsound.SND_FILENAME)
+            computer()
+            time.sleep(4.0)
+            intro()
+        else:
+            print("kiez uit ziekmelden of naar school gaan.")
+        
+
+
 
 
 def intro():
@@ -453,5 +506,7 @@ for i in range(5):
         winsound.PlaySound("introsound.wav", winsound.SND_FILENAME)
         barbaar()
         forest()
+    elif choice == 'WAKE-UP':
+        easteregg()
     else:
         print("kiez uit dungoun, caves of forest") 
