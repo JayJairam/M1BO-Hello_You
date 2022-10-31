@@ -424,6 +424,7 @@ def caves():
             print("hoera je hebt de monster verslagen")
             time.sleep(2.8)
             caves2()
+            break
         else:
             print("kiez uit val monster aan of daimonds")
 
